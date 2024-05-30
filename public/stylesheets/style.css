@@ -1,0 +1,242 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+
+/*header*/
+Header{
+  background: #88cf58;
+  height: 60px;
+  align-content: center;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  color: #1732da;
+  font-size: 20px;
+  font-weight: bold;
+}
+.language{
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+/*main*/
+.title{
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 100px;
+  text-align: center;
+  color: #88cf58;
+}
+.layout_input{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  margin: 50px auto;
+  border: 1px; ;
+}
+.inputText{
+  border: 5px solid #88cf58;
+  height: auto;
+  width: 35%;
+  padding: 5px 15px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.button{
+  margin-left: 10px;
+  padding: 5px 15px;
+  background: none #7ed214;
+  border: none;
+  box-shadow: none;
+  font-family: Roboto, sans-serif;
+  color: #fff;
+  font-size: .875rem;
+  font-weight: 700;
+  width: auto;
+  height: 50px;
+}
+.button:active ul{
+  scale: 0.99;
+}
+.button-paste{
+  margin-left: 10px;
+  padding: 5px 15px;
+  background: none #7ed214;
+  border: none;
+  box-shadow: none;
+  font-family: Roboto, sans-serif;
+  color: #474949;
+  font-size: .875rem;
+  font-weight: 700;
+  width: auto;
+  height: 50px;
+}
+.introduce{
+  width: 80%;
+  height: auto;
+  margin: 80px auto 0 auto;
+  background: #88cf58;
+  padding: 30px;
+}
+.title-introduce{
+  font-weight: bold;
+  font-size: 30px;
+  color: #1732da;
+  text-align: center;
+}
+.content-introduce{
+  font-size: 20px;
+  margin-left: 20px;
+}
+.question{
+  width: 100%;
+  text-align: left;
+}
+/*footer*/
+footer{
+  padding: 0 10%;
+  margin: 20px 0;
+}
+.question{
+  margin-top: 5px;
+}
+/*hướng dẫn*/
+.number {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+  margin-bottom: 10px;
+}
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+/*hỏi đáp*/
+.body1 {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+.containers {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+h2 {
+  font-size: 28px;
+  color: #333;
+}
+.card-header {
+  background-color: #f1f1f1;
+  border: none;
+  padding: 0;
+}
+.card-header .btn {
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 15px;
+  width: 100%;
+  text-align: left;
+}
+.card-header .btn:hover {
+  background-color: #e2e2e2;
+}
+.card-body {
+  font-size: 14px;
+  color: #555;
+  background-color: #fff;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+}
+.card {
+  border: none;
+  border-radius: 0;
+  margin-bottom: 10px;
+}
+.card:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+.btn-link {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-link .fas {
+  transition: transform 0.3s ease;
+}
+.btn-link[aria-expanded="true"] .fas {
+  transform: rotate(180deg);
+}
+/* phần tải video*/
+.video {
+  width: 30%;
+  height: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.rows {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 2px solid #ddd;
+  font-weight: bold;
+}
+.header div, .rows div {
+  flex: 1;
+  text-align: center;
+}
+hr {
+  border: none;
+  border-top: 1px solid #0c0d0d;
+  margin: 10px 0;
+}
+.button-load{
+  background: none #1abc9c;
+  border: none;
+  box-shadow: none;
+  color: #ffffff;
+  display: block;
+}
+.button-reload{
+  background: none #474949;
+  border: none;
+  box-shadow: none;
+  color: #ffffff;
+  width: auto;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*Màu*/
+.step-1 .number { background-color: #2c3e50; }
+.step-2 .number { background-color: #e74c3c; }
+.step-3 .number { background-color: #1abc9c; }
+
