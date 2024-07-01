@@ -112,7 +112,7 @@ routes(app);
 
 // catch 404 and forward to error handler
 const language_dict = {};
-glob.sync('./language/*.json').forEach(function (file) {
+glob.sync('../language/*.json').forEach(function (file) {
   console.log(file);
   let dash = file.split(path.sep);
   if (dash.length === 2) {
