@@ -1,12 +1,13 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="notranslate" translate="no">
   <head>
     <!-- Font Awesome CSS -->
     <!-- nội dung gốc là trang đang được hiển thị  -->
     <link rel="canonical" href="https://dotsave.app/" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SaveFace.app</title>
+    <meta name="google" content="notranslate"/>
+    <title>Dowload videos Facebook free 1080P 2K, 4K - FbLink</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
@@ -14,41 +15,72 @@
 
     <link rel="stylesheet" href="stylesheets/style.css" />
 
+    <link rel="icon" href="/image/fb-icon.png" />
+
   </head>
 
 <body>
 <header>
-  <div class="logo" href="/">SaveFace</div>
+  <div class="logo" href="/">FbLink</div>
     <a class="btn text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <%= __('header_language')%>
+      LANGUAGE
     </a>
     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-      <a class="dropdown-item" href="/en"><%= __('english')%></a>
-      <a class="dropdown-item" href="/vi"><%= __('vietnamese')%></a>
-      <a class="dropdown-item" href="/ja"><%= __('japan')%></a>
-      <a class="dropdown-item" href="/ko"><%= __('korea')%></a>
-      <a class="dropdown-item" href="/it"><%= __('italy')%></a>
-      <a class="dropdown-item" href="/ms"><%= __('malaysia')%></a>
-      <a class="dropdown-item" href="/jv"><%= __('indonesia')%></a>
-      <a class="dropdown-item" href="/ro"><%= __('romania')%></a>
+      <li><a href="/en" class="dropdown-item">English</a></li>
+      <li><a href="/vi" class="dropdown-item">Tiếng Việt</a></li>
+      <li><a href="/id" class="dropdown-item">Bahasa Indonesia</a></li>
+      <li><a href="/ms" class="dropdown-item">Bahasa Malaysia</a></li>
+      <li><a href="/hi" class="dropdown-item">हिन्दी</a></li>
+      <li><a href="/pt" class="dropdown-item">Português</a></li>
+      <li><a href="/cs" class="dropdown-item">čeština</a></li>
+      <li><a href="/jv" class="dropdown-item">Basa Jawa</a></li>
+      <li><a href="/ko" class="dropdown-item">한국어</a></li>
+      <li><a href="/it" class="dropdown-item">Italiano</a></li>
+      <li><a href="/fr" class="dropdown-item">Français</a></li>
+      <li><a href="/uk" class="dropdown-item">українська мова</a></li>
+      <li><a href="/th" class="dropdown-item">ภาษาไทย</a></li>
+      <li><a href="/ru" class="dropdown-item">русский</a></li>
+      <li><a href="/es" class="dropdown-item">Español</a></li>
+      <li><a href="/bn" class="dropdown-item">বাংলা</a></li>
+      <li><a href="/pa" class="dropdown-item">ਪੰਜਾਬੀ</a></li>
+      <li><a href="/tr" class="dropdown-item">Turkish</a></li>
+      <li><a href="/de" class="dropdown-item">German</a></li>
+      <li><a href="/ja" class="dropdown-item">日本語</a></li>
+      <li><a href="/ro" class="dropdown-item">Romanian</a></li>
     </div>
 </header>
 
 <div class="horizontal-rule"></div>
-
-<!--Title-->
-<h1 class="title"><%= __('main_title')%></h1>
-
-<!--  dowload-->
 <main>
-  <form id="videoForm" class="layout_input mb-4">
-    <label for="url"></label>
-    <input name="url" id="url" class="inputText" type="text" placeholder="<%= __('input_placeholder')%>" >
-    <button class="btn btn-outline-secondary button-paste" type="button" id="pasteButton">
-      <i class="fas fa-paste"></i>
-    </button>
-    <button class="button btn btn-success"  type="submit"><%= __('button_text')%></button>
-  </form>
+  <div class="form-container" id="videoForm">
+    <h1 class="title"><%= __('main_title')%></h1>
+    <p class=" text-center "><%= __('main_title-1')%></p>
+    <form
+          class="w-100 d-flex flex-column flex-sm-row align-items-sm-end justify-content-center mt-3">
+
+      <div id="input_container">
+
+        <div class="input-group">
+          <input id="url" type="text" class="form-control shadow-none inputText" name="url" placeholder="<%= __('input_placeholder')%>"  >
+          <span id="pasteButton" class="input-group-text fw-bold px-4 is-paste" style="color: #0c0d0d !important; border-radius: 0 4px 4px 0;">
+              <div class="d-flex align-items-center justify-content-center">
+                <img class="mx-1" src="/image/paste.png" style="height: 1.1rem; width: 1.1rem" alt="paste">
+                <%= __('paste')%>
+              </div>
+         </span>
+          <span id="clearButton" class="input-group-text fw-bold px-4 is-paste" style="color: #0c0d0d !important; display: none; border-radius: 0 4px 4px 0;">
+            <div class="d-flex align-items-center justify-content-center">
+             <img class="mx-1" src="/image/clear.png" style="height: 1.1rem; width: 1.1rem" alt="clear">
+               <%= __('clean')%>
+            </div>
+           </span>
+        </div>
+      </div>
+      <button class="button btn btn-success p-2 p-sm-3 mx-sm-2" type="submit">
+        <img class="img-button mx-1" src="/image/download.png" style="height: 1.3rem; width: 1.3rem" alt="downloading">
+        <%= __('button_text')%></button>
+    </form>
+  </div>
 
 <!--  error url-->
   <div class="d-flex justify-content-center">
@@ -62,11 +94,11 @@
         <div class="modal-body text-center">
           <div class="spinner-border text-primary" role="status">
             <span class="sr-only">Loading...</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
   </div>
 
 <!-- video and dowload -->
@@ -85,15 +117,54 @@
   <!-- Custom JS -->
   <script>
 
-<!--paste-->
-    document.getElementById('pasteButton').addEventListener('click', async function() {
-      try {
-        const text = await navigator.clipboard.readText();
-        document.getElementById('url').value = text;
-      } catch (err) {
-        console.error('Failed to read clipboard contents: ', err);
+  document.addEventListener('DOMContentLoaded', function () {
+    const pasteButton = document.getElementById('pasteButton');
+    const clearButton = document.getElementById('clearButton');
+    const urlInput = document.getElementById('url');
+
+    function handlePasteClick() {
+      navigator.clipboard.readText().then(text => {
+        console.log('Pasting text:', text);
+        urlInput.value = text;
+        showClearButton();
+      }).catch(err => {
+        console.error('Failed to read clipboard contents:', err);
+      });
+    }
+
+    function handleClearClick() {
+      console.log('Clearing input');
+      urlInput.value = '';
+      showPasteButton();
+    }
+
+    function showClearButton() {
+      console.log('Showing clear button');
+      pasteButton.style.display = 'none';
+      clearButton.style.display = 'flex';
+    }
+
+    function showPasteButton() {
+      console.log('Showing paste button');
+      pasteButton.style.display = 'flex';
+      clearButton.style.display = 'none';
+    }
+
+    pasteButton.addEventListener('click', handlePasteClick);
+    clearButton.addEventListener('click', handleClearClick);
+
+    urlInput.addEventListener('input', function () {
+      if (urlInput.value) {
+        showClearButton();
+      } else {
+        showPasteButton();
       }
     });
+
+    // Initialize
+    console.log('Initializing');
+    showPasteButton();
+  });
 
     document.getElementById('videoForm').addEventListener('submit', async function(event) {
       event.preventDefault();
@@ -249,42 +320,66 @@
 </main>
 
   <!-- Giới thiệu-->
-<div class="introduce">
-  <h3 class="font-bold text-center mb-6 mt-2 text-2x text-primary-emphasis"><%= __('introduce_title1')%><samp class="title-introduce"><%= __('introduce_title2')%></samp></h3>
-  <ol class="mb-4 ml-6 list-decimal">
-    <li>
-      <p class="mb-4 px-4"><%= __('introduce-1')%>
-      </p></li><li>
-      <p class="mb-4 px-4"><%= __('introduce-2')%>
-      </p></li><li>
-      <p class="mb-4 px-4"><%= __('introduce-3')%>
-      </p></li><li>
-      <p class="mb-4 px-4"><%= __('introduce-4')%>
-      </p></li></ol>
-  </div>
-
-<!--Hướng dẫn sử dụng -->
-<div id="renderGuide"  class="containers text-center mt-5">
-  <h1 class="h3"><%= __('guide_title')%></h1>
-  <div class="row mt-4">
-    <div class="col-md-4 step step-1">
-      <div class="number">1</div>
-      <p><%= __('guide_steps-1')%></p>
+<div class="containerss">
+  <h1 class="title center"><%= __('introduce_title1')%></h1>
+  <p><strong><%= __('introduce_title2')%></strong><%= __('introduce-1')%></p>
+  <div class="features">
+    <div class="feature">
+      <div class="feature-header">
+        <img src="https://fdownloader.net/fdownloader/imgs/clock.png" alt="Đơn giản và Nhanh chóng">
+        <b><%= __('introduce_title3')%></b>
+      </div>
+      <p><%= __('introduce-2')%></p>
     </div>
-    <div class="col-md-4 step step-2">
-      <div class="number">2</div>
-      <p><%= __('guide_steps-2')%></p>
+    <div class="feature">
+      <div class="feature-header">
+        <img src="https://fdownloader.net/fdownloader/imgs/fb.png" alt="Video chất lượng cao">
+        <b><%= __('introduce_title4')%></b>
+      </div>
+      <p><%= __('introduce-3')%></p>
     </div>
-    <div class="col-md-4 step step-3">
-      <div class="number">3</div>
-      <p><%= __('guide_steps-3')%></p>
+    <div class="feature">
+      <div class="feature-header">
+        <img src="https://fdownloader.net/fdownloader/imgs/coin.png"  alt="Miễn phí mãi mãi">
+        <b><%= __('introduce_title5')%></b>
+      </div>
+      <p><%= __('introduce-4')%></p>
     </div>
   </div>
 </div>
 
+<!--Hướng dẫn sử dụng -->
+<div id="renderGuide" class="containerss">
+  <h2 class="title center"><%= __('guide_title')%></h2>
+  <ul class="listicon liststep">
+    <li><span class="number">1</span> <span><%= __('guide_steps-1')%></span></li>
+    <li><span class="number">2</span> <span><%= __('guide_steps-2')%></span>
+    </li><li><span class="number">3</span> <span><%= __('guide_steps-3')%></span></li>
+  </ul>
+</div>
+
+<!--Tinh năng-->
+<div class="containersss">
+  <h3 style="color: #ffffff"><b><%= __('feature_title')%></b></h3>
+  <div class="featuress">
+    <div class="feature-item"><%= __('feature-1')%></div>
+    <div class="feature-item"><%= __('feature-2')%></div>
+    <div class="feature-item"><%= __('feature-3')%></div>
+    <div class="feature-item"><%= __('feature-4')%></div>
+    <div class="feature-item"><%= __('feature-5')%></div>
+    <div class="feature-item"><%= __('feature-6')%></div>
+  </div>
+</div>
+
+<div class="containerss">
+  <h1 class="title center"><%= __('content_title')%></h1>
+  <p><strong><%= __('content-1')%></strong><%= __('content-2')%></p>
+  <p><%= __('content-3')%></p>
+</div>
+
 <!--Hỏi và đáp-->
-<div class="containers mt-5">
-  <h2 class="text-center mb-4"><%= __('faq_title')%></h2>
+<div class="containers ">
+  <h2 class="title center"><%= __('faq_title')%></h2>
   <div class="accordion" id="faqAccordion">
     <div class="card">
       <div class="card-header" id="headingOne">
@@ -409,9 +504,11 @@
   </div>
 </div>
 <!-- Phần Footer -->
-<footer class="bg-base-content py-4">
-  <div class="container mx-auto px-4 text-white">
-    <p class="text-black text-center">© 2024 <b><a>danvokhanh</a></b> - All rights reserved.</p>
+<footer class="text-center text-sm-start" style="background-color: #f0f8ff">
+  <div class="container">
+    <div class="text-center p-4">
+      © 2024 FbLink.id - All rights reserved.
+    </div>
   </div>
 </footer>
 

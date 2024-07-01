@@ -11,11 +11,12 @@ const fs = require("fs");
 const routes = require("./routes");
 const os = require("os");
 const puppeteer = require("puppeteer");
+const favicon = require('serve-favicon'); // Add this line
+
 var app = express();
 
-
 i18n.configure({
-  locales: ["vi", "en", "ja", "ko", "it", "ms", "ro", "jv"],
+  locales: ["vi", "en", "ja", "ko", "it", "ms", "ro", "jv", "bn", "cs", "de", "es", "fr", "hi", "id", "pa", "pt", "ru", "th", "tr", "uk"],
   directory: __dirname + "/language",
   cookie: "lang",
   header: "accept-language",
@@ -32,6 +33,7 @@ app.use(partials());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
+app.use(favicon(path.join(__dirname, 'public', '/image/fb-icon.png'))); // Add this line
 
 // viết câu lệnh xử lý khi người dùng truy cập trang chủ
 app.get('/',function (req,res) {
@@ -288,15 +290,5 @@ const crawlFacebookVideoData = async (video_url) => {
       ? { private: true }
       : getFacebookUrlFromRaw(minimal_content);
 };
-
-// const getLanguageCode = (req) => {
-//   var code;
-//   try {
-//     code = req.params.code;
-//   } catch (error) {}
-//   code = language_dict.hasOwnProperty(code) ? code : "vi";
-//   i18n.setLocale(req, code);
-//   return code;
-// };
 
 module.exports = app;
