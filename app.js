@@ -112,14 +112,18 @@ routes(app);
 
 // catch 404 and forward to error handler
 const language_dict = {};
-
 glob.sync('../language/*.json').forEach(function (file) {
-  let dash = file.split("/");
-  if (dash.length == 3) {
-    let dot = dash[2].split(".");
-    if (dot.length == 2) {
+  console.log(file);
+  let dash = file.split(path.sep);
+  if (dash.length === 2) {
+    let dot = dash[1].split(".");
+    if (dot.length === 2) {
       let lang = dot[0];
       fs.readFile(file, function (err, data) {
+        if (err) {
+          console.error(err);
+          return;
+        }
         language_dict[lang] = JSON.parse(data.toString());
       });
     }
